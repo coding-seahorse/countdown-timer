@@ -1,7 +1,11 @@
-# countdown-timer
+<h1 align="center">Countdown Timer</h1>
+
+![project6](https://user-images.githubusercontent.com/115553545/197778912-d57adb8c-b303-48ee-90d5-2e1cf0b4347b.PNG)
+
 landing page
 
 ## Built With
+
 
 - Semantic HTML5 Markup
 - Modern CSS
