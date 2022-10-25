@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    min-height: calc(100vh - 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+
+.fade-out {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear
+}
+
+.fade-in {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+  }
+
+.clock-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #04adfe;
+    margin-bottom: 3rem;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+main {
+    font-size: 5rem;
+}
+
+.time-word {
+    font-size: 1rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form input {
+    background-color: white;
+    height: 40px;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+}
+
+input {
+    border-radius: 5px 0 0 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgb(23, 111, 212);
+}
+
+#email {
+    width: 500px;
+    margin: 0;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+    font-family: 'Roboto Mono', monospace;
+}
+
+button {
+    font-family: 'Raleway', sans-serif;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    padding: 0.5rem;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    background-color: #04adfe;
+    transition: ease-out 0.2s;
+}
+
+button:hover {
+    background-color: rgb(51, 128, 216);
+}
+
+button:focus {
+    background-color: rgb(14, 94, 185);
+
+}
+
+.feedback {
+    color: rgb(13, 180, 55);
+    display: none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 80%;
+    }
+
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 60%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 40%;
+    }
+
+    .clock-container {
+        gap: 3rem;
+    }
+
+}
