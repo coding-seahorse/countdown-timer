@@ -11,10 +11,10 @@
 
 ## Features
 
-- Local Storage
-- Dark/Light Theme Toggle
+- Countdown Timer
+- Subscription button
+- Data Validation
 - Responsive Layout
-- Single Page Design
 - Modern CSS
 
 ## Acknowledgments
